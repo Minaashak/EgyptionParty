@@ -1,0 +1,155 @@
+:root{
+    --min-margin:32px;
+    --min-padding:42px;
+}
+html ,body{
+    scroll-behavior: smooth;
+}
+/* !----SiteBar */
+#siteBar{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    display: flex;
+    white-space: normal;
+}
+#siteBar .links{
+    background-color: black;
+    display: none;
+}
+#siteBar .links .all-links{
+        padding: 30px;
+}
+#siteBar .links .all-links a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color .5s;
+}
+#siteBar .links a:hover{
+    color: brown;
+}
+#siteBar .open-siteBar{
+    align-self: self-start;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 100%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    padding: 6px;
+    white-space: nowrap;
+}
+#siteBar .open-siteBar h3{
+    font-weight: bold;
+}
+/* !----Home-Start */
+#home{
+    background-image : linear-gradient(to right, rgba(255, 0, 0, 0.34),rgba(255, 0, 0, 0.34)),  url(../image/events-heavenly-header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#home .container  .home{
+    display: flex;
+    justify-content: center;
+}
+#home .container  .home .home-title{
+    color: white;
+}
+#home .container  .home .home-title h2{
+    font-size: 42px;
+    margin-bottom: 6px;
+}
+#home .container  .home .home-title p{
+    font-size: 18px;
+    text-align: center;
+}
+/* !----Home-End */
+
+/* !----Duration-Start */
+#duration{
+    margin-top: var(--min-margin);
+    padding: var(--min-padding);
+}
+#duration .container .row .content .about-duration h3{
+    background-color: #e68185;
+    color: white;
+    cursor: pointer;
+}
+#duration .container .row .content .about-duration p{
+    background-color: #ccc;
+    display: none;
+}
+@media(max-width:992px){
+    #duration .container .row .content .about-duration{
+        width: 100% !important;
+    }
+}
+/*!----Duration-End */
+
+/*!----CountDown-Start */
+#count{
+    background-image: linear-gradient(to right ,  rgba(255, 0, 0, 0.34),rgba(255, 0, 0, 0.34))  , url(../image/invitation-2508607__340.jpg);
+    height: fit-content;
+    margin-top: var(--min-margin);
+    padding: var(--min-padding);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#count .container .row .day , .hour , .min , .sec{
+    border: 1px solid white;
+    text-align: center;
+    padding: var(--min-padding);
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+/*!----CountDown-End */
+
+/* !----Contact-Start */
+#contact{
+    margin: var(--min-margin);
+    padding: var(--min-margin);
+}
+#contact .container .row .con-title h3{
+    font-size: 36px;
+    font-weight: bold;
+}
+/* !----Contact-End */
+
+/* !---Contact-Start */
+#contact .container .row .media{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#contact .container .row .media .icon{
+    margin-right: 30px;
+    border: 1px solid #ccc;
+    padding: 12px;
+    transition: background .5s , color .5s;
+}
+#contact .container .row .media .icon i{
+    font-size: 18px;
+}
+#contact .container .row .media .icon:hover{
+    color: white;
+    background-color: red;
+}
+#contact .container .row form textarea{
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+#contact .container .row form p span{
+    color: red;
+}
+/* !---Contact-End */
